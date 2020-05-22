@@ -37,9 +37,6 @@ func (l Locker) ShutdownContext(ctx context.Context) {
 	}()
 }
 
-// A LockPath represents a lockfile on any filesystem.
-type LockPath string
-
 // ErrorAlreadyLocked reports that our path is already locked.
 var ErrorAlreadyLocked = errors.New("LockPath is already locked")
 
